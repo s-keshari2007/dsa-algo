@@ -93,19 +93,19 @@ static int idx = -1;
         }
 
         cout << endl;
-    } //skiiping the mentioned block will print witout shoing the levels
+    } //skiiping the mentioned block will print witout showing the levels
 
 int main(){
 
     vector<int> preorder = {1,2,-1,-1,3,4,-1,-1,5,-1,-1};
      
     Node* root = buildTree(preorder);
-    //preOrder(root);
-    //cout << endl;
+    preOrder(root);
+    cout << endl;
     //inOrder(root);
     //cout << endl;
     //postOrder(root);
     //cout << endl;
-    levelOrder(root);
+    //levelOrder(root);
     return 0;
 }
