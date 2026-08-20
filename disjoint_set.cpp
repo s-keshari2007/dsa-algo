@@ -6,12 +6,13 @@ class DisjointSet{
 
     public:
         DisjointSet(int n){
-            // this done using 1  based indexing
+            // this done using 1  based indexing   
             rank.resize(n+1, 0);
             parent.resize(n+1, 0);
             size.resize(n+1 ,0); 
-            for(int i = 0; i < n; i++){
+            for(int i = 0; i <= n; i++){
                 parent[i] = i; //firstly  everybody is the parent of itself
+                size[i] = 1;
             }
         }
 
